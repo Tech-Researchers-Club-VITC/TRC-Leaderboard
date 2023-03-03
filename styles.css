@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #9ecae0;
+}
+.header {
+	min-height: 150vh;
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+	  url(trc\ 2.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	color: white;
+  }
+  html::-webkit-scrollbar {
+	width: 0.5rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+	background: #0d0d0d;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+	background: crimson;
+	border-radius: 5rem;
+  }
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.lboard_section{
+	width: 500px;
+	height: 400px;
+	margin: 100px auto 0;
+	background: #f94f62;
+	padding: 25px 40px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.lboard_section .lboard_tabs ul{
+	display: flex;
+}
+
+.lboard_section .lboard_tabs ul li{
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #3a3d51;
+	cursor: pointer;
+}
+
+.lboard_section .lboard_tabs ul li:hover,
+.lboard_section .lboard_tabs ul li.active{
+	color: #fff;
+}
+
+.lboard_wrap{
+	position: absolute;
+	top: 70px;
+	left: 60px;
+	background: #d5b000;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.lboard_wrap .lboard_item{
+	padding: 25px;
+}
+
+.lboard_wrap .lboard_mem{
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #d5b000;
+}
+
+.lboard_wrap .lboard_mem:first-child{
+	padding-top: 0;
+}
+
+.lboard_wrap .lboard_mem:last-child{
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img{
+	width: 50px;
+}
+
+.lboard_wrap .lboard_mem img{
+	display: block;
+	width: 100%;
+}
+
+.lboard_wrap .lboard_mem .name_bar{
+	margin: 0 20px;
+	width: calc(100% - 150px);
+	text-align: center;
+	color: black;
+}
+.lboard_wrap .lboard_mem .name_bar :hover{
+	color: coral;
+}
+
+.lboard_wrap .lboard_mem .name_bar p{
+	color: #3a3d51;
+	font-weight: 400;
+}
+
+.lboard_wrap .lboard_mem .name_bar p span{
+	margin-right: 5px;
+}
+
+.lboard_wrap .lboard_mem .points{
+	width: 100px;
+	color: #3a3d51;
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap{
+	width: 100%;
+	height: 5px;
+	background: #d5b000;
+	margin-top: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap .inner_bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	background: #fff;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.footer {
+	padding-top: 20%;
+	text-align: center;
+  }
+@media screen and (max-width: 624px){
+	.header{
+		width: 100%;
+		height: 100%;
+	}
+	.wrapper{
+		width: 100%;
+		height: 100%;
+	}
+	.lboard_section{
+		width: 500px;
+		height: 400px;
+		margin: 100px auto 0;
+	}
+	.lboard_wrap{
+		width: 100%;
+		height: 100%;
+	}
+}
